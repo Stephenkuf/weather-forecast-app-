@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">  
+    
+
+    <title>Nigerian Weather and Time</title>
+</head>
+<body >
+    <nav class="nav-custom">
+        <div class="navbar navbar-inverse " >
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="nav-logo">WeatherNg</span>
+                </a>
+
+               
+            </div>
+            
+            
+        </div>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+    <main>
+        <div class="container-fluid  ">
+            <div style="border:4px inset gray;"  class="row main-cont1">
+                <div id="index-bx" class="col-md-6 " >
+                    <div >
+                        <canvas id="mycanvas" width="350px" height="350px"
+                        style="border:15px outset rgb(46, 46, 46); border-radius: 190px;  margin: auto;">
+
+                        </canvas>
+                    </div>
+
+                </div>
+                <div id="index-bx" class="col-md-6 ">
+                    <form class="navbar-form  " >
+                        <div class="form-group">                                
+                                <select class="form-control" id="city">
+                                  <option  value="2332459">Lagos</option>
+                                  <option  value="2352776">Abuja</option>
+                                  <option  value="2325190">Oyo</option>
+                                  <option value="2324774">PortHarcourt</option>
+                                  <option  value="2322907">Sokoto</option>
+                                </select>
+                              </div>
+                        <button type="submit" class="btn btn-default" id="cityb">Go</button>
+                      </form>
+                        <div id="current-weather" >
+                            <h3>Current Weather in <span id="city_selected"di></span></h3>
+                            <h4  class="timespace"></h4>
+                        
+                            <br>
+                        
+                            <div class="row">
+                                
+                                <div class="col-md-10">
+                                    <p class="parameter1 description-main"></p>
+                                    <p class="parameter temperature-main"></p>
+                                    <p class="parameter wind-main"></p>
+                                    <p  class="parameter humidity-main"></p>
+                                    <p class="parameter pressure-main"></p>
+                                </div>                    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+
+            <!-- LATER IN THE WEEK FORECASTS -->
+            
+            <div class="container-fluid"  >
+                    <h3>Later this Week.</h3>
+                <div class="row main-cont2" style="border:4px solid gray;">
+                     <div class="col-md-3">                    
+                        <div class="row"> 
+                                <div class="col-md-2"> 
+                                        <img class="icon" src="https://openweathermap.org/img/w/02d.png">
+                                    </div>                    
+                                                                
+                                <div class="col-md-9">                                    
+                                    <h4 class="timespace"></h4>
+                                    <p class="other-days1 description-main"></p>
+                                    <p class="other-days temperature-main"></p>
+                                    <p class="other-days wind-main"></p>
+                                    <p  class="other-days humidity-main"></p>
+                                    <p class=" other-days  pressure-main"></p>
+                                </div>    
+                               
+                            </div>
+                    </div>
+                    <div class="col-md-3">
+                    
+                            <div class="row">
+                                <div class="col-md-2"> 
+                                   <img class="icon" src="https://openweathermap.org/img/w/02d.png">
+                               </div> 
+                               <div class="col-md-10">
+                                   <h4 class="timespace"></h4>
+                                   <p class="other-days1 description-main"></p>
+                                   <p class="other-days temperature-main"></p>
+                                   <p class="other-days wind-main"></p>
+                                   <p  class="other-days humidity-main"></p>
+                                   <p class=" other-days  pressure-main"></p>
+                               </div>                       
+                                
+                           </div>
+                   </div>
+                   <div class="col-md-3">
+                    
+                        <div class="row">
+                            <div class="col-md-2"> 
+                               <img class="icon" src="https://openweathermap.org/img/w/02d.png">
+                           </div> 
+                           <div class="col-md-10">
+                               <h4  class="timespace"></h4>
+                               <p class="other-days1 description-main"></p>
+                               <p class="other-days temperature-main"></p>
+                               <p class="other-days wind-main"></p>
+                               <p  class="other-days humidity-main"></p>
+                               <p class=" other-days  pressure-main"></p>
+                           </div>                       
+                            
+                       </div>
+               </div>
+               <div class="col-md-3">
+                    
+                    <div class="row">
+                        <div class="col-md-2"> 
+                          
+                            <img class="icon" src="https://openweathermap.org/img/w/02d.png">
+                       </div> 
+                       <div class="col-md-10">                           
+                           <h4  class="timespace"></h4>
+                           <p class="other-days1 description-main"></p>
+                           <p class="other-days temperature-main"></p>
+                           <p class="other-days wind-main"></p>
+                           <p  class="other-days humidity-main"></p>
+                           <p class=" other-days  pressure-main"></p>
+                       </div>                       
+                        
+                   </div>
+           </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </main>
+     <!-- END OF MAIN CONTENT -->
+    <footer>
+        <nav class="navbar footer-nav  navbar-default">
+            <div class="container-fluid">
+
+            </div>
+        </nav>
+
+    </footer>   
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</body>
+</html>
