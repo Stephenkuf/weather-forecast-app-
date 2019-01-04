@@ -1,2 +1,2 @@
 # weather-forecast-app-
-It is a weather forecast app which uses APIs from open weather to get weather based on city , and a javascript real time clock beside it .
+A weather forecast app which makes use of  APIs from open weather to get weather reports based on city , also featuring a javascript real time clock.
